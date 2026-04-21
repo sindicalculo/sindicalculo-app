@@ -1,4 +1,4 @@
-# ⚖️ SindiCalculo
+# ⚖️ SindiCalculo APP
 
 O **SindiCalculo** é um SaaS B2B moderno projetado para Sindicatos de Trabalhadores. A plataforma unifica gestão de associados, captura de leads jurídicos (via widgets embedáveis) e simulação precisa de direitos trabalhistas (Rescisão, Horas Extras, Férias, 13º Salário e IRPF).
 
