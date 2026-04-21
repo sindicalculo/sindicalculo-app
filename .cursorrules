@@ -1,0 +1,14 @@
+# Regras do Projeto - SindiCalculo
+
+## Stack Tecnológico
+- Frontend: Next.js 14+ (App Router), React, TypeScript.
+- Estilização: Tailwind CSS, Shadcn UI (Radix), Lucide Icons.
+- Backend/DB/Auth: Supabase (PostgreSQL).
+- Validação: Zod + React Hook Form.
+
+## Princípios de Arquitetura
+1. **Separação de Preocupações:** Nunca misture regras de negócio de cálculos trabalhistas dentro de Server Components ou Client Components.
+2. **Domain/Feature Isolation:** Cada calculadora (ex: rescisão, férias) deve ser um módulo isolado dentro de `src/modules/`. Se a calculadora de férias quebrar, a de rescisão deve continuar intacta.
+3. **Infraestrutura:** Chamadas ao banco de dados (Supabase) devem ficar isoladas em `src/lib/supabase` ou em repositórios específicos dentro dos módulos.
+4. **Server Actions:** Use Next.js Server Actions para mutações de dados, mantendo validação estrita com Zod.
+5. **Tipagem:** TypeScript rigoroso. Evite `any`. Use tipos literais e interfaces claras para os laudos e configurações de CCT.
