@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { TerminationResult } from '@/modules/calculators/rescisao/types';
 import { RescisaoFormValues } from '@/modules/calculators/rescisao/schema';

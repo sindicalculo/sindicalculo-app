@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { ValeTransporteOutput } from '@/modules/calculators/vale-transporte/types';
 import { ValeTransporteFormValues } from '@/modules/calculators/vale-transporte/schema';

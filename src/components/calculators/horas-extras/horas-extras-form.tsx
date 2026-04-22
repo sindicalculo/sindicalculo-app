@@ -31,7 +31,7 @@ export function HorasExtrasForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<HorasExtrasFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(horasExtrasSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -79,7 +79,7 @@ export function HorasExtrasForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

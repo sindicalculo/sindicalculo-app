@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import { HorasExtrasFormValues } from "@/modules/calculators/horas-extras/schema";
 import { HorasExtrasOutput } from "@/modules/calculators/horas-extras/types";

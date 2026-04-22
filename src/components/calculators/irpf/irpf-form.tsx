@@ -31,7 +31,7 @@ export function IrpfForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<IRPFFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(irpfSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -77,7 +77,7 @@ export function IrpfForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

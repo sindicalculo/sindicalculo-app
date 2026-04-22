@@ -31,7 +31,7 @@ export function DiferencaForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<DiferencaSalarialFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(diferencaSalarialSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -76,7 +76,7 @@ export function DiferencaForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

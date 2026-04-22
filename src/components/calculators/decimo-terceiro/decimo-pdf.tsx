@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { DecimoTerceiroOutput } from '@/modules/calculators/decimo-terceiro/types';
 import { DecimoTerceiroFormValues } from '@/modules/calculators/decimo-terceiro/schema';

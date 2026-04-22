@@ -31,7 +31,7 @@ export function DecimoTerceiroForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<DecimoTerceiroFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(decimoTerceiroSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -80,7 +80,7 @@ export function DecimoTerceiroForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

@@ -40,8 +40,8 @@ export async function processarAposentadoria(data: AposentadoriaFormValues): Pro
         cpf: validatedData.cpfAssociado,
         nomeCompleto: validatedData.nomeAssociado
       });
-      if (assocRes.success && assocRes.data) {
-        associadoId = assocRes.data.id;
+      if (assocRes.success && assocRes.id) {
+        associadoId = assocRes.id;
       }
     }
 

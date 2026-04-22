@@ -31,7 +31,7 @@ export function ValeTransporteForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<ValeTransporteFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(valeTransporteSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -77,7 +77,7 @@ export function ValeTransporteForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

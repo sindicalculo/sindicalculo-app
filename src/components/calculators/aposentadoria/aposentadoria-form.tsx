@@ -31,7 +31,7 @@ export function AposentadoriaForm() {
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<AposentadoriaFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(aposentadoriaSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -81,7 +81,7 @@ export function AposentadoriaForm() {
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

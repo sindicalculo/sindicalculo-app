@@ -39,7 +39,7 @@ export function FeriasForm({ isWidget = false, widgetSindicatoId }: FeriasFormPr
     setIsClient(true);
   }, []);
 
-  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<FeriasFormValues>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm({
     resolver: zodResolver(feriasSchema),
     defaultValues: {
       cpfAssociado: "",
@@ -105,7 +105,7 @@ export function FeriasForm({ isWidget = false, widgetSindicatoId }: FeriasFormPr
     }
   };
 
-  const sindicatoFallback = {
+  const sindicatoFallback: any = {
     nomeFantasia: "Sindicato não identificado",
     cnpj: "00.000.000/0000-00"
   };

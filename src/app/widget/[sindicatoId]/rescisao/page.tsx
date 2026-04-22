@@ -49,8 +49,8 @@ export default function WidgetRescisaoPage({ params }: WidgetRescisaoPageProps) 
       mediasAdicionais: 0,
       reason: TerminationReason.DISMISSAL_WITHOUT_CAUSE,
       noticeStatus: NoticeStatus.WORKED,
-      dependentes: 0,
-      feriasVencidas: 0,
+      dependentsCount: 0,
+      expiredVacationDays: 0,
     }
   });
 

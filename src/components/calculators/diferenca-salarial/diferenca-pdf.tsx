@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { DiferencaSalarialOutput } from '@/modules/calculators/diferenca-salarial/types';
 import { DiferencaSalarialFormValues } from '@/modules/calculators/diferenca-salarial/schema';

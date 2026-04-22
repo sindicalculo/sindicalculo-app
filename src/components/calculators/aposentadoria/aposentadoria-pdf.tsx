@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { AposentadoriaFormValues } from '@/modules/calculators/aposentadoria/schema';
 import { AposentadoriaOutput } from '@/modules/calculators/aposentadoria/types';

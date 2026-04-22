@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
 import { IRPFFormValues } from '@/modules/calculators/irpf/schema';
 import { IRPFOutput } from '@/modules/calculators/irpf/types';

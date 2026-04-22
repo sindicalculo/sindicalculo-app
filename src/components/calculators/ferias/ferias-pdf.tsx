@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 import { FeriasOutput } from '@/modules/calculators/ferias/types';
 import { FeriasFormValues } from '@/modules/calculators/ferias/schema';
